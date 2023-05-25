@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51F9E053-BB8B-48FE-A5F9-370FE7887FF6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>sign_up</RootNamespace>
+    <AssemblyName>sign up</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addSon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSon.Designer.cs">
+      <DependentUpon>addSon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_bird.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_bird.Designer.cs">
+      <DependentUpon>add_bird.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_cage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_cage.Designer.cs">
+      <DependentUpon>add_cage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editBird.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editBird.Designer.cs">
+      <DependentUpon>editBird.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editCage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editCage.Designer.cs">
+      <DependentUpon>editCage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBird.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBird.Designer.cs">
+      <DependentUpon>SearchBird.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchCage.Designer.cs">
+      <DependentUpon>SearchCage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showbird.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showbird.Designer.cs">
+      <DependentUpon>showbird.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showBirds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showBirds.Designer.cs">
+      <DependentUpon>showBirds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowCage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowCage.Designer.cs">
+      <DependentUpon>ShowCage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="showCages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showCages.Designer.cs">
+      <DependentUpon>showCages.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addSon.resx">
+      <DependentUpon>addSon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_bird.resx">
+      <DependentUpon>add_bird.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_cage.resx">
+      <DependentUpon>add_cage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editBird.resx">
+      <DependentUpon>editBird.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editCage.resx">
+      <DependentUpon>editCage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchBird.resx">
+      <DependentUpon>SearchBird.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchCage.resx">
+      <DependentUpon>SearchCage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showbird.resx">
+      <DependentUpon>showbird.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showBirds.resx">
+      <DependentUpon>showBirds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowCage.resx">
+      <DependentUpon>ShowCage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="showCages.resx">
+      <DependentUpon>showCages.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-birds-tl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
